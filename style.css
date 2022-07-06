@@ -9,6 +9,7 @@ body {
     background: #000;
     width: 100%;
 
+
 }
 
 html,
@@ -71,7 +72,8 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 50%;
 }
-.actived a:active{
+
+.actived a:active {
     background-color: #ffeb3b;
 }
 
@@ -133,7 +135,24 @@ nav ul li a:hover::after {
 
 }
 
-.about h1 {}
+.about h1,
+.about h2 {
+    padding: 5px 23px;
+}
+
+.about-head {
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 30px;
+    justify-content: center;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background-image: url(img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
 
 .skill h1 {
     text-align: center;
@@ -296,7 +315,8 @@ nav ul li a:hover::after {
         width: 75%;
     }
 }
-.content h3{
+
+.content h3 {
     color: #ffeb3b;
 }
 
@@ -465,7 +485,7 @@ footer p {
 }
 
 #preloader {
-    background: #000 url(preload.gif);
+    background: #000 url(img/preload.gif);
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -549,7 +569,67 @@ footer p {
     display: none;
 }
 
+#invesible1 {
+    display: none;
+}
+
+#invesible2 {
+    display: none;
+}
+
+#invesible3 {
+    display: none;
+}
+
+#invesible4 {
+    display: none;
+}
+
+#invesible5 {
+    display: none;
+}
+
 #read-more {
+    cursor: pointer;
+    float: right;
+    border: 20px;
+    background: transparent;
+    color: #fff;
+}
+
+#read-more1 {
+    cursor: pointer;
+    float: right;
+    border: 20px;
+    background: transparent;
+    color: #fff;
+}
+
+#read-more2 {
+    cursor: pointer;
+    float: right;
+    border: 20px;
+    background: transparent;
+    color: #fff;
+}
+
+#read-more3 {
+    cursor: pointer;
+    float: right;
+    border: 20px;
+    background: transparent;
+    color: #fff;
+}
+
+#read-more4 {
+    cursor: pointer;
+    float: right;
+    border: 20px;
+    background: transparent;
+    color: #fff;
+}
+
+#read-more5 {
     cursor: pointer;
     float: right;
     border: 20px;
@@ -613,7 +693,7 @@ footer p {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    color: #ffeb3b;
 }
 
 .serv p {
@@ -677,7 +757,8 @@ i {
     margin-top: 2px;
     padding-top: 0;
 }
-.follow{
+
+.follow {
     /* background: #fff; */
     width: 100%;
     /* height: 100vh; */
@@ -685,9 +766,10 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.follow ion-icon{
+
+.follow ion-icon {
     background: transparent;
     color: white;
     cursor: pointer;
@@ -745,20 +827,36 @@ i {
     }
 
     .about {
-        padding: 10px;
-        margin-top: -10px;
+        /* padding: 10px; */
+        margin-top: -50%;
+        margin-left: 0;
+       padding-bottom: 90px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        background-size: 100%;
+        
     }
 
-    .skill h2 {
-        /* padding: 10px; */
-        width: 100%;
+    .about-head {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .skill h1 {
+        padding: 10px 0;
+        /* width: 100%; */
         justify-content: center;
         text-align: center;
+        margin-top: 90%;
+        position: relative;
     }
 
     .skills {
         width: 80%;
         height: 100vh;
+        margin-bottom: -70%;
     }
 
     .progress-bar {
