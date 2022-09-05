@@ -18,10 +18,10 @@
         <nav>
             <img src="img/logo4.png" alt="" class="logo" />
             <ul id="hambarger">
-                <li><a href="#" class="actived">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">PortFolio</a></li>
+                <li class="navlinks"><a href="#home" class="actived">Home</a></li>
+                <li class="navlinks"><a href="#about">About</a></li>
+                <li class="navlinks"><a href="#contactme">Contact</a></li>
+                <li class="navlinks"><a href="#project">PortFolio</a></li>
                 <!-- <li id="darkbtn"><span ></span></li> -->
 
                 <div class="form-check form-switch dark">
@@ -36,7 +36,7 @@
                 <ion-icon name="close-outline" id="close" class="mobule-nav"></ion-icon>
             </div>
         </nav>
-        <div class="intro">
+        <div id="home" class="intro">
             <div class="row">
                 <div class="text">
                     <div class="auto_typed">
@@ -50,7 +50,7 @@
                         pariatur.
                     </p>
                     <br />
-                    <a href="#contact" class="contactbtn">Contact Me</a>
+                    <a href="contactme" class="contactbtn">Contact Me</a>
                     <a href="Arman Ali.pdf" download class="btn" target="_blank">Download CV</a>
                 </div>
                 <div class="text_right">
@@ -385,13 +385,16 @@
                         </p>
                         <p><i class="fa-solid fa-phone"></i> +91 7007017603</p>
                         <div class="social-icon">
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-github"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100048140558992" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://mobile.twitter.com/armanalioffical" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/arman_ali12/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/arman8808/" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/arman-ali-0b7480147/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
-                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                        <a href="Arman Ali.pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact_right">
                         <form name="submit-to-google-sheet">
@@ -421,17 +424,17 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyDmFbBtOJ-Q99bJiQrFA0Dun84C7oIfvFbAxB8luSyj-7dzaVW6RJKcpPB9wbMuBEpWg/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById("msg");
+        const msg = document.getElementById("msg");
 
 
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                    msg.innerHTML="Message Sent Successfully"
-                    setTimeout(function(){
-                        msg.innerHTML=""
-                    },5000)
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 1000)
                     form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))

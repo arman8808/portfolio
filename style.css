@@ -46,7 +46,7 @@ nav {
     overflow: hidden;
     position: fixed;
     top: 0;
-    background: transparent;
+    background: #262626;
     width: 100%;
     background: var(--nav-color);
     color: var(--text-color);
@@ -562,7 +562,8 @@ nav ul li a:hover::after {
     margin-top: 15px;
 
 }
-#msg{
+
+#msg {
     color: #ff004f;
     margin-top: -20px;
     display: block;
@@ -752,6 +753,20 @@ form button {
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #c4d3d7);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #ff004f);
 }
 
 footer {

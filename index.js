@@ -183,3 +183,14 @@ else if(localStorage.getItem('theme')=='light'){
 else{
     localStorage.setItem('theme','dark')
 }
+const navlinks=document.querySelectorAll(".navlinks");
+const mobileview=window.matchMedia('(max-width:62em) ')
+if(mobileview.matches){
+    navlinks.forEach((l)=> {
+        l.addEventListener('click',()=>{
+            
+            x.style.display='none'
+        })
+    
+    })      
+}
