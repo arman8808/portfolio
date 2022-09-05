@@ -2,282 +2,411 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
     <title>PortFolio</title>
 </head>
 
 <body>
     <div id="preloader"></div>
     <div class="main">
-
         <nav>
-            <img src="img/logo1.png" alt="" class="logo">
+            <img src="img/logo4.png" alt="" class="logo" />
             <ul id="hambarger">
                 <li><a href="#" class="actived">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">PortFolio</a></li>
+                <!-- <li id="darkbtn"><span ></span></li> -->
+
+                <div class="form-check form-switch dark">
+                    <input class="form-check-input switch-btn" id="darkmodebtncolor" onclick="darkmode()"
+                        type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                    <label id="darkbtntxt" class="form-check-label" for="flexSwitchCheckDefault">Lite Mode</label>
+                </div>
             </ul>
+
             <div class="mobile-view">
                 <ion-icon name="menu-outline" id="open" class="mobule-nav" onclick="toggle()"></ion-icon>
                 <ion-icon name="close-outline" id="close" class="mobule-nav"></ion-icon>
             </div>
         </nav>
         <div class="intro">
-            <div class="text">
-                <h2>I'm <span id="auto-typed"></span></h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Voluptas hic blanditiis unde atque
-                    ratione at
-                    possimus <br> corrupti velit dolorem corporis libero <br> consectetur ipsum delectus asperiores,
-                    provident quam
-                    est sed pariatur.</p><br>
-                <a href="#contact">Contact Me</a>
-                <a href="Arman Ali.pdf" class="btn" target="_blank">Download CV</a>
-
+            <div class="row">
+                <div class="text">
+                    <div class="auto_typed">
+                        <h2>I'm <span id="auto-typed"></span></h2>
+                    </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+                        Voluptas hic blanditiis unde atque ratione at possimus <br />
+                        corrupti velit dolorem corporis libero <br />
+                        consectetur ipsum delectus asperiores, provident quam est sed
+                        pariatur.
+                    </p>
+                    <br />
+                    <a href="#contact" class="contactbtn">Contact Me</a>
+                    <a href="Arman Ali.pdf" download class="btn" target="_blank">Download CV</a>
+                </div>
+                <div class="text_right">
+                    <img src="img/user.png" alt="" class="user-img" />
+                </div>
             </div>
-            <img src="img/user.png" alt="" class="user-img">
         </div>
         <div class="about" id="about">
-            <div class="about-head">
-                <h2>About</h2>
-            </div>
-            <h1>Hello!</h1>
-            <h2>I'm Arman Ali</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quidem molestias, tempore inventore
-                necessitatibus at temporibus itaque facere odio fugit nostrum, quasi dolorum quae corrupti, expedita
-                facilis ad. Totam, dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt
-                incidunt distinctio laboriosam blanditiis dolore quis totam quam reiciendis omnis, libero eligendi
-                nulla, fugit quos ex excepturi doloribus asperiores deleniti. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Tenetur voluptatum dolore officiis dignissimos, perspiciatis iusto quia. Molestias quo
-                magni qui consequatur, in quibusdam unde earum culpa porro, dolor facilis adipisci?
-            </p>
-        </div>
-        <div class="skill">
-            <h1>Skills</h1>
-        </div>
-        <div class="skills">
-            <h2>HTML</h2>
-            <div class="progress-bar">
-                <div class="html"><span>85</span></div>
-            </div>
-            <h2>CSS</h2>
-            <div class="progress-bar">
-                <div class="css"><span>85</span></div>
-            </div>
-            <h2>BOOTSTRAP</h2>
-            <div class="progress-bar">
-                <div class="bootstrap"><span>80</span></div>
-            </div>
-            <h2>JAVASCRIPT</h2>
-            <div class="progress-bar">
-                <div class="javascript"><span>63</span></div>
-            </div>
-            <h2>JQuery</h2>
-            <div class="progress-bar">
-                <div class="jquery"><span>60</span></div>
-            </div>
-            <h2>Python</h2>
-            <div class="progress-bar">
-                <div class="python"><span>75</span></div>
+            <div class="container"></div>
+            <div class="row">
+                <div class="about_left">
+                    <img src="img/pro1.jpg" alt="Photo is not present this moment" />
+                </div>
+                <div class="about_right">
+                    <h2 class="sub_title">About</h2>
+                    <h1>Hello!</h1>
+                    <h2>I'm Arman Ali</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+                        quidem molestias, tempore inventore necessitatibus at temporibus
+                        itaque facere odio fugit nostrum, quasi dolorum quae corrupti,
+                        expedita facilis ad. Totam, dignissimos. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Unde nesciunt incidunt
+                        distinctio laboriosam blanditiis dolore quis totam quam reiciendis
+                        omnis, libero eligendi nulla, fugit quos ex excepturi doloribus
+                        asperiores deleniti. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Tenetur voluptatum dolore officiis dignissimos,
+                        perspiciatis iusto quia. Molestias quo magni qui consequatur, in
+                        quibusdam unde earum culpa porro, dolor facilis adipisci?
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="project">
-            <h2>Recent Project</h2>
-
-        </div>
-        <div class="project-card">
-            <div class="card">
-
-                <div class="content">
-                    <h3>Movie Ticket booking System</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto nesciunt, quidem doloribus
-                        exercitationem architecto perspiciatis accusamus nihil iure quisquam odio, aliquam id itaque
-                        voluptatibus dolorum cum soluta inventore. Vel accusamus autem soluta id exercitationem officia
-                        tempora vero, labore,<span id="dots">....</span><span id="invesible">aliquid excepturi
-                            consequuntur ab consectetur sed voluptatibus molestias
-                            hic veniam. Deserunt vitae commodi officia suscipit atque aperiam rem iste non animi fuga
-                            quae
-                            eligendi eveniet laborum distinctio, vel modi veniam quasi? Voluptate distinctio totam
-                            soluta
-                            magni veritatis! Consequuntur ad placeat fugiat corporis voluptatem repellat velit quia
-                            deserunt
-                            doloribus tempore. Quibusdam odit eum numquam exercitationem. Temporibus rem in, esse hic ad
-                            incidunt.</span> </p>
-                    <button id="read-more" onclick="Moreless()">Read More</button>
+        <div id="skills">
+            <div class="container">
+                <h2 class="sub_title">Skills</h2>
+                <div class="skill_list">
+                    <div class="skillsprogressbar">
+                        <h2>HTML</h2>
+                        <div class="progress-bar">
+                            <div class="html"><span>85</span></div>
+                        </div>
+                    </div>
+                    <div class="skillsprogressbar">
+                        <h2>CSS</h2>
+                        <div class="progress-bar">
+                            <div class="css"><span>85</span></div>
+                        </div>
+                    </div>
+                    <div class="skillsprogressbar">
+                        <h2>BOOTSTRAP</h2>
+                        <div class="progress-bar">
+                            <div class="bootstrap"><span>80</span></div>
+                        </div>
+                    </div>
+                    <div class="skillsprogressbar">
+                        <h2>JAVASCRIPT</h2>
+                        <div class="progress-bar">
+                            <div class="javascript"><span>63</span></div>
+                        </div>
+                    </div>
+                    <div class="skillsprogressbar">
+                        <h2>JQuery</h2>
+                        <div class="progress-bar">
+                            <div class="jquery"><span>60</span></div>
+                        </div>
+                    </div>
+                    <div class="skillsprogressbar">
+                        <h2>Python</h2>
+                        <div class="progress-bar">
+                            <div class="python"><span>75</span></div>
+                        </div>
+                    </div>
+                    <div class="skillsprogressbar">
+                        <h2>React</h2>
+                        <div class="progress-bar">
+                            <div class="react"><span>55</span></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-
-                <div class="content">
-                    <h3>Personal Assistant</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto nesciunt, quidem doloribus
-                        exercitationem architecto perspiciatis accusamus nihil iure quisquam odio, aliquam id itaque
-                        voluptatibus dolorum cum soluta inventore. Vel accusamus autem soluta id exercitationem officia
-                        tempora vero, labore,<span id="dots1">....</span><span id="invesible1">aliquid excepturi
-                            consequuntur ab consectetur sed voluptatibus molestias
-                            hic veniam. Deserunt vitae commodi officia suscipit atque aperiam rem iste non animi fuga
-                            quae
-                            eligendi eveniet laborum distinctio, vel modi veniam quasi? Voluptate distinctio totam
-                            soluta
-                            magni veritatis! Consequuntur ad placeat fugiat corporis voluptatem repellat velit quia
-                            deserunt
-                            doloribus tempore. Quibusdam odit eum numquam exercitationem. Temporibus rem in, esse hic ad
-                            incidunt.</span> </p>
-                    <button id="read-more1" onclick="Moreless1()">Read More</button>
-                </div>
-            </div>
-            <div class="card">
-
-                <div class="content">
-                    <h3>Softify Clone</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto nesciunt, quidem doloribus
-                        exercitationem architecto perspiciatis accusamus nihil iure quisquam odio, aliquam id itaque
-                        voluptatibus dolorum cum soluta inventore. Vel accusamus autem soluta id exercitationem officia
-                        tempora vero, labore,<span id="dots2">....</span><span id="invesible2">aliquid excepturi
-                            consequuntur ab consectetur sed voluptatibus molestias
-                            hic veniam. Deserunt vitae commodi officia suscipit atque aperiam rem iste non animi fuga
-                            quae
-                            eligendi eveniet laborum distinctio, vel modi veniam quasi? Voluptate distinctio totam
-                            soluta
-                            magni veritatis! Consequuntur ad placeat fugiat corporis voluptatem repellat velit quia
-                            deserunt
-                            doloribus tempore. Quibusdam odit eum numquam exercitationem. Temporibus rem in, esse hic ad
-                            incidunt.</span> </p>
-                    <button id="read-more2" onclick="Moreless2()">Read More</button>
-                </div>
-            </div>
-            <div class="card">
-
-                <div class="content">
-                    <h3>Myntra Clone</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto nesciunt, quidem doloribus
-                        exercitationem architecto perspiciatis accusamus nihil iure quisquam odio, aliquam id itaque
-                        voluptatibus dolorum cum soluta inventore. Vel accusamus autem soluta id exercitationem officia
-                        tempora vero, labore,<span id="dots3">....</span><span id="invesible3">aliquid excepturi
-                            consequuntur ab consectetur sed voluptatibus molestias
-                            hic veniam. Deserunt vitae commodi officia suscipit atque aperiam rem iste non animi fuga
-                            quae
-                            eligendi eveniet laborum distinctio, vel modi veniam quasi? Voluptate distinctio totam
-                            soluta
-                            magni veritatis! Consequuntur ad placeat fugiat corporis voluptatem repellat velit quia
-                            deserunt
-                            doloribus tempore. Quibusdam odit eum numquam exercitationem. Temporibus rem in, esse hic ad
-                            incidunt.</span> </p>
-                    <button id="read-more3" onclick="Moreless3()">Read More</button>
-                </div>
-            </div>
-            <div class="card">
-
-                <div class="content">
-                    <h3>Ecommerce website</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto nesciunt, quidem doloribus
-                        exercitationem architecto perspiciatis accusamus nihil iure quisquam odio, aliquam id itaque
-                        voluptatibus dolorum cum soluta inventore. Vel accusamus autem soluta id exercitationem officia
-                        tempora vero, labore,<span id="dots4">....</span><span id="invesible4">aliquid excepturi
-                            consequuntur ab consectetur sed voluptatibus molestias
-                            hic veniam. Deserunt vitae commodi officia suscipit atque aperiam rem iste non animi fuga
-                            quae
-                            eligendi eveniet laborum distinctio, vel modi veniam quasi? Voluptate distinctio totam
-                            soluta
-                            magni veritatis! Consequuntur ad placeat fugiat corporis voluptatem repellat velit quia
-                            deserunt
-                            doloribus tempore. Quibusdam odit eum numquam exercitationem. Temporibus rem in, esse hic ad
-                            incidunt.</span> </p>
-                    <button id="read-more4" onclick="Moreless4()">Read More</button>
-                </div>
-            </div>
-            <div class="card">
-
-                <div class="content">
-                    <h3>Qr Scanner And Generator</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto nesciunt, quidem doloribus
-                        exercitationem architecto perspiciatis accusamus nihil iure quisquam odio, aliquam id itaque
-                        voluptatibus dolorum cum soluta inventore. Vel accusamus autem soluta id exercitationem officia
-                        tempora vero, labore,<span id="dots5">....</span><span id="invesible5">aliquid excepturi
-                            consequuntur ab consectetur sed voluptatibus molestias
-                            hic veniam. Deserunt vitae commodi officia suscipit atque aperiam rem iste non animi fuga
-                            quae
-                            eligendi eveniet laborum distinctio, vel modi veniam quasi? Voluptate distinctio totam
-                            soluta
-                            magni veritatis! Consequuntur ad placeat fugiat corporis voluptatem repellat velit quia
-                            deserunt
-                            doloribus tempore. Quibusdam odit eum numquam exercitationem. Temporibus rem in, esse hic ad
-                            incidunt.</span> </p>
-                    <button id="read-more5" onclick="Moreless5()">Read More</button>
-                </div>
-            </div>
-
-        </div>
-        <div class="services">
-            <h2>Services</h2>
-        </div>
-        <div class="services-cont">
-            <div class="serv">
-                <div class="icon">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                </div>
-
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat eos aperiam autem cumque
-                    !</p>
-            </div>
-            <div class="serv">
-                <div class="icon">
-                    <ion-icon name="brush-outline" size="'large"></ion-icon>
-                </div>
-
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat eos aperiam autem cumque
-                    !</p>
-            </div>
-            <div class="serv">
-                <div class="icon">
-                    <ion-icon name="desktop-outline"></ion-icon>
-                </div>
-
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat eos aperiam autem cumque
-                    !</p>
             </div>
         </div>
-        <div class="contact">
-            <h2>Contact Me</h2>
-        </div>
-        <div class="formvalue">
-            <form action="mailto:armanjee2016@gmail.com" method="post">
-                <h3>Get In Touch</h3>
-                <input type="text" name="" id="name" placeholder="Your Name" required>
-                <input type="email" name="" id="email" placeholder="Your Email Id" required>
-                <input type="text" name="" id="phone" placeholder="Your Phone Number" required>
-                <textarea name="" id="message" rows="4" placeholder="Type Your Message Here"></textarea>
-                <button type="submit" onsubmit="openpopup()" return false value="Send">Submit</button>
-                <div class="submit">
-                    <div class="popup" id="popup">
-                        <img src="img\/pop.png" alt="">
-                        <h2>Thank You</h2>
-
-                        <p>Your details has been Submitted</Details>
+        <div id="project">
+            <div class="container">
+                <h2 class="sub_title">Recent Projects</h2>
+            </div>
+            <div class="project-card">
+                <div class="card">
+                    <div class="content">
+                        <h3>Movie Ticket booking System</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            iusto nesciunt, quidem doloribus exercitationem architecto
+                            perspiciatis accusamus nihil iure quisquam odio, aliquam id
+                            itaque voluptatibus dolorum cum soluta inventore. Vel accusamus
+                            autem soluta id exercitationem officia tempora vero,
+                            labore,<span id="dots">....</span><span id="invesible">aliquid excepturi consequuntur ab
+                                consectetur sed
+                                voluptatibus molestias hic veniam. Deserunt vitae commodi
+                                officia suscipit atque aperiam rem iste non animi fuga quae
+                                eligendi eveniet laborum distinctio, vel modi veniam quasi?
+                                Voluptate distinctio totam soluta magni veritatis!
+                                Consequuntur ad placeat fugiat corporis voluptatem repellat
+                                velit quia deserunt doloribus tempore. Quibusdam odit eum
+                                numquam exercitationem. Temporibus rem in, esse hic ad
+                                incidunt.</span>
                         </p>
-                        <button type="button" onclick="closepopup()">Close</button>
-                    </div>|
+                        <button id="read-more" onclick="Moreless()">Read More</button>
+                    </div>
                 </div>
-            </form>
-            <!-- <div class="container">
-                <button type="submit" class="btn" onclick="openpopup()">submit</button>
-                
-            </div>|| -->
+                <div class="card">
+                    <div class="content">
+                        <h3>Personal Assistant</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            iusto nesciunt, quidem doloribus exercitationem architecto
+                            perspiciatis accusamus nihil iure quisquam odio, aliquam id
+                            itaque voluptatibus dolorum cum soluta inventore. Vel accusamus
+                            autem soluta id exercitationem officia tempora vero,
+                            labore,<span id="dots1">....</span><span id="invesible1">aliquid excepturi consequuntur ab
+                                consectetur sed
+                                voluptatibus molestias hic veniam. Deserunt vitae commodi
+                                officia suscipit atque aperiam rem iste non animi fuga quae
+                                eligendi eveniet laborum distinctio, vel modi veniam quasi?
+                                Voluptate distinctio totam soluta magni veritatis!
+                                Consequuntur ad placeat fugiat corporis voluptatem repellat
+                                velit quia deserunt doloribus tempore. Quibusdam odit eum
+                                numquam exercitationem. Temporibus rem in, esse hic ad
+                                incidunt.</span>
+                        </p>
+                        <button id="read-more1" onclick="Moreless1()">Read More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3>Softify Clone</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            iusto nesciunt, quidem doloribus exercitationem architecto
+                            perspiciatis accusamus nihil iure quisquam odio, aliquam id
+                            itaque voluptatibus dolorum cum soluta inventore. Vel accusamus
+                            autem soluta id exercitationem officia tempora vero,
+                            labore,<span id="dots2">....</span><span id="invesible2">aliquid excepturi consequuntur ab
+                                consectetur sed
+                                voluptatibus molestias hic veniam. Deserunt vitae commodi
+                                officia suscipit atque aperiam rem iste non animi fuga quae
+                                eligendi eveniet laborum distinctio, vel modi veniam quasi?
+                                Voluptate distinctio totam soluta magni veritatis!
+                                Consequuntur ad placeat fugiat corporis voluptatem repellat
+                                velit quia deserunt doloribus tempore. Quibusdam odit eum
+                                numquam exercitationem. Temporibus rem in, esse hic ad
+                                incidunt.</span>
+                        </p>
+                        <button id="read-more2" onclick="Moreless2()">Read More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3>Myntra Clone</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            iusto nesciunt, quidem doloribus exercitationem architecto
+                            perspiciatis accusamus nihil iure quisquam odio, aliquam id
+                            itaque voluptatibus dolorum cum soluta inventore. Vel accusamus
+                            autem soluta id exercitationem officia tempora vero,
+                            labore,<span id="dots3">....</span><span id="invesible3">aliquid excepturi consequuntur ab
+                                consectetur sed
+                                voluptatibus molestias hic veniam. Deserunt vitae commodi
+                                officia suscipit atque aperiam rem iste non animi fuga quae
+                                eligendi eveniet laborum distinctio, vel modi veniam quasi?
+                                Voluptate distinctio totam soluta magni veritatis!
+                                Consequuntur ad placeat fugiat corporis voluptatem repellat
+                                velit quia deserunt doloribus tempore. Quibusdam odit eum
+                                numquam exercitationem. Temporibus rem in, esse hic ad
+                                incidunt.</span>
+                        </p>
+                        <button id="read-more3" onclick="Moreless3()">Read More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3>Ecommerce website</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            iusto nesciunt, quidem doloribus exercitationem architecto
+                            perspiciatis accusamus nihil iure quisquam odio, aliquam id
+                            itaque voluptatibus dolorum cum soluta inventore. Vel accusamus
+                            autem soluta id exercitationem officia tempora vero,
+                            labore,<span id="dots4">....</span><span id="invesible4">aliquid excepturi consequuntur ab
+                                consectetur sed
+                                voluptatibus molestias hic veniam. Deserunt vitae commodi
+                                officia suscipit atque aperiam rem iste non animi fuga quae
+                                eligendi eveniet laborum distinctio, vel modi veniam quasi?
+                                Voluptate distinctio totam soluta magni veritatis!
+                                Consequuntur ad placeat fugiat corporis voluptatem repellat
+                                velit quia deserunt doloribus tempore. Quibusdam odit eum
+                                numquam exercitationem. Temporibus rem in, esse hic ad
+                                incidunt.</span>
+                        </p>
+                        <button id="read-more4" onclick="Moreless4()">Read More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3>Qr Scanner And Generator</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                            iusto nesciunt, quidem doloribus exercitationem architecto
+                            perspiciatis accusamus nihil iure quisquam odio, aliquam id
+                            itaque voluptatibus dolorum cum soluta inventore. Vel accusamus
+                            autem soluta id exercitationem officia tempora vero,
+                            labore,<span id="dots5">....</span><span id="invesible5">aliquid excepturi consequuntur ab
+                                consectetur sed
+                                voluptatibus molestias hic veniam. Deserunt vitae commodi
+                                officia suscipit atque aperiam rem iste non animi fuga quae
+                                eligendi eveniet laborum distinctio, vel modi veniam quasi?
+                                Voluptate distinctio totam soluta magni veritatis!
+                                Consequuntur ad placeat fugiat corporis voluptatem repellat
+                                velit quia deserunt doloribus tempore. Quibusdam odit eum
+                                numquam exercitationem. Temporibus rem in, esse hic ad
+                                incidunt.</span>
+                        </p>
+                        <button id="read-more5" onclick="Moreless5()">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn seemorebtn">See More</a>
         </div>
 
+        <div id="services">
+            <div class="container">
+                <h2 class="sub_title">Services</h2>
+            </div>
+            <div class="services_list">
+                <div class="services-cont">
+                    <div class="serv">
+                        <div class="icon">
+                            <ion-icon name="code-slash-outline"></ion-icon>
+                        </div>
+
+                        <h3>Web Development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                            repellat eos aperiam autem cumque !
+                        </p>
+                    </div>
+                    <div class="serv">
+                        <div class="icon">
+                            <ion-icon name="brush-outline" size="'large"></ion-icon>
+                        </div>
+
+                        <h3>Graphic Design</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                            repellat eos aperiam autem cumque !
+                        </p>
+                    </div>
+                    <div class="serv">
+                        <div class="icon">
+                            <ion-icon name="desktop-outline"></ion-icon>
+                        </div>
+
+                        <h3>Web Design</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                            repellat eos aperiam autem cumque !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="testimonial">
+            <div class="container">
+                <h2 class="sub_title">Customer Testimonial</h2>
+            </div>
+            <div class="testimonial_list">
+                <div class="testimonial_profile">
+                    <img src="img/member-1.png" />
+
+                    <p>
+                        <i class="fa-solid fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempora quibusdam labore
+                        illum, laboriosam sit. Molestias animi ratione, soluta id
+                        aspernatur in adipisci, fugit ipsum illum voluptas amet! Qui,
+                        consequuntur!
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+
+
+                    <h3><span>Lucy</span>Ceo Xyz.</h3>
+                </div>
+                <div class="testimonial_profile">
+                    <img src="img/member-2.png" />
+                    <p>
+                        <i class="fa-solid fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempora quibusdam labore
+                        illum, laboriosam sit. Molestias animi ratione, soluta id
+                        aspernatur in adipisci, fugit ipsum illum voluptas amet! Qui,
+                        consequuntur!
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+
+                    <h3><span>Jhon</span>Ceo Abc.</h3>
+
+                </div>
+                <div class="testimonial_profile">
+                    <img src="img/member-3.png" />
+                    <p>
+                        <i class="fa-solid fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempora quibusdam labore
+                        illum, laboriosam sit. Molestias animi ratione, soluta id
+                        aspernatur in adipisci, fugit ipsum illum voluptas amet! Qui,
+                        consequuntur!
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+
+                    <h3><span>Rose</span>Ceo Pqr.</h3>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="contactme">
+            <div class="container">
+                <div class="row">
+                    <div class="contact_left">
+                        <h2 class="sub_title">Contact Me</h2>
+                        <img src="img/pro1.jpg" alt="" />
+                        <h3>Arman Ali</h3>
+                        <p>
+                            <i class="fa-solid fa-paper-plane"></i> armanal3066@gmail.com
+                        </p>
+                        <p><i class="fa-solid fa-phone"></i> +91 7007017603</p>
+                        <div class="social-icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact_right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required />
+                            <input type="email" name="Email" placeholder="Your Email" required />
+                            <textarea name="Message" id="Message" rows="4" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="follow">
-        <ion-icon name="logo-instagram"><a href="#"></a></ion-icon>
-        <ion-icon name="logo-github"><a href="https://github.com/arman8808" target="_blank"></a></ion-icon>
-        <ion-icon name="logo-facebook"><a href="#"></a></ion-icon>
-        <ion-icon name="mail-outline"><a href="#"></a></ion-icon>
-    </div>
+
     <footer>
         <p>&copy; copyright 2022 Arman Ali. All Right Reserved.</p>
     </footer>
@@ -286,6 +415,28 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/2bbc349720.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyDmFbBtOJ-Q99bJiQrFA0Dun84C7oIfvFbAxB8luSyj-7dzaVW6RJKcpPB9wbMuBEpWg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML="Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>

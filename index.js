@@ -134,17 +134,52 @@ function Moreless5(){
     }
 }
 // responsive
-function toggle() {
-    let x =document.getElementById("hambarger");
+let x =document.getElementById("hambarger");
     let y =document.getElementById("open");
     let z =document.getElementById("close");
+function toggle() {
+
+
+
+    
     if(x.style.display=='none'){
         x.style.display='block';
-
         
-    }
+        
+        }
     else{
         x.style.display='none';
+       
+         
         
     }
+}
+// ==========Dark Mode========
+var darkMode=document.getElementsByClassName("switch-btn");
+var darkbtncolor=document.getElementById("darkmodebtncolor");
+var darkbtntxt=document.getElementById("darkbtntxt")
+console.
+log("hello dark more")
+console.log("darkmodebtncolor")
+console.log(darkbtntxt)
+
+function darkmode(){
+    document.body.classList.toggle("dark-theme")
+    if(localStorage.getItem('theme')=='dark'){
+        localStorage.setItem("theme","light");
+        darkbtntxt.innerHTML="Dark Mode"
+    }
+    else{
+        darkbtntxt.innerHTML="Lite Mode"
+        localStorage.setItem('theme','dark')
+    }
+}
+if(localStorage.getItem('theme')=='dark'){
+    document.body.classList.remove("dark-theme")
+}
+else if(localStorage.getItem('theme')=='light'){
+    document.body.classList.add("dark-theme")
+}
+else{
+    localStorage.setItem('theme','dark')
 }
